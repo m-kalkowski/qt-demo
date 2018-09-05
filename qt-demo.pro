@@ -8,8 +8,12 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
+TEMPLATE app
+
 TARGET = qt-demo
-TEMPLATE = qt-demo
+
+target.path = /opt/b2open/bin
+!isEmpty(target.path): INSTALLS += target
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which has been marked as deprecated (the exact warnings
@@ -33,5 +37,5 @@ HEADERS += \
 FORMS += \
         mainwindow.ui
 
-target.path = /usr/bin
-INSTALLS += target
+
+

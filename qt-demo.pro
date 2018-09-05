@@ -29,14 +29,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-        main.cpp \
-        mainwindow.cpp
+    main.cpp \
+    mainwindow.cpp \
+    GPIO.cpp \
+    mcp3424.cpp
 
 HEADERS += \
-        mainwindow.h
+    mainwindow.h \
+    GPIO.h \
+    mcp3424.h
 
 FORMS += \
-        mainwindow.ui
+    mainwindow.ui
 
 
 

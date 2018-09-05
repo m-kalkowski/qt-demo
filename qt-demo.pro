@@ -10,9 +10,9 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TEMPLATE = app
 
-TARGET = qt-demo
+TARGET = demo
 
-target.path = /opt/qt-demo/bin
+target.path = /opt/demo/bin
 
 !isEmpty(target.path):INSTALLS += target
 

@@ -13,7 +13,7 @@ TEMPLATE app
 TARGET = qt-demo
 
 target.path = /opt/qt-demo/bin
-!isEmpty(target.path): INSTALLS += target
+INSTALLS += target
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which has been marked as deprecated (the exact warnings

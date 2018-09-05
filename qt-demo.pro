@@ -12,7 +12,7 @@ TEMPLATE app
 
 TARGET = qt-demo
 
-target.path = /opt/b2open/bin
+target.path = /opt/qt-demo/bin
 !isEmpty(target.path): INSTALLS += target
 
 # The following define makes your compiler emit warnings if you use

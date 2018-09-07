@@ -7,8 +7,8 @@ class GPIO
     public:
         GPIO();
         virtual ~GPIO();
-        void gpioOn();
-        void gpioOff();
+        void gpioOn(int pin);
+        void gpioOff(int pin);
         int GPIOWrite(int, int);
         int GPIODirection(int,int);
         int GPIOUnexport(int);

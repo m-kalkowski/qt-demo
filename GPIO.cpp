@@ -16,10 +16,11 @@
 #define LOW  0
 #define HIGH 1
 
-#define PIN27  21
-#define PIN26  20
-#define PIN25  16
-#define PIN24  12
+#define PIN27  27
+#define PIN26  1
+#define PIN25  12
+#define PIN24  26
+
 #define BUFFER_MAX 3
 #define VALUE_MAX    35
 #define DIRECTION_MAX 35
@@ -45,23 +46,16 @@ GPIO::GPIO()
 
 
 
-void GPIO::gpioOn()
+void GPIO::gpioOn(int pin)
 {
-
-	 GPIOWrite(PIN24 , 0);
-	 GPIOWrite(PIN25 , 0);
-	 GPIOWrite(PIN26 , 0);
-	 GPIOWrite(PIN27 , 0);
+     GPIOWrite(pin , 0);
 }
 
 
-void  GPIO:: gpioOff  ()
+void  GPIO:: gpioOff  (int pin)
 {
 
-	 GPIOWrite(PIN24 , 1);
-	 GPIOWrite(PIN25 , 1);
-	 GPIOWrite(PIN26 , 1);
-     GPIOWrite(PIN27 , 1);
+     GPIOWrite(pin , 1);
 }
 
 
